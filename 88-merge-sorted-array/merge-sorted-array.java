@@ -6,19 +6,14 @@ class Solution {
 
         while (a >= 0 && b >= 0) {
             if (nums1[a] > nums2[b]) {
-                nums1[c] = nums1[a];
-                a--;
+                nums1[c--] = nums1[a--];
             } else {
-                nums1[c] = nums2[b];
-                b--;
+                nums1[c--] = nums2[b--];
             }
-            c--;
         }
 
         while (b >= 0) {
-            nums1[c] = nums2[b];
-            b--;
-            c--;
+            nums1[c--] = nums2[b--];
         }
     }
 }
