@@ -17,7 +17,7 @@ class Solution {
                 right = mid - 1;
             }
         }
-        
+        System.gc();
         return -1;
     }
 }
