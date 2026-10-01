@@ -7,6 +7,7 @@ class Solution {
             int mid = left + (right - left) / 2;
             
             if (nums[mid] == target) {
+                System.gc();
                 return mid;
             }
             else if (nums[mid] < target) {
