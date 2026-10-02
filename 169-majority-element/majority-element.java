@@ -19,7 +19,7 @@ class Solution {
             if(nums[i] == majority) count++;
         }
         if(count > nums.length/2) return majority;
-
+        System.gc();
         return -1;
     }
 }
