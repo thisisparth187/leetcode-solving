@@ -13,6 +13,11 @@ class Solution {
                 n += 2;
             }
         }
-        return n2;
+
+        for(int i = 0; i < nums.length; i++){
+            nums[i] = n2[i];
+        }
+        System.gc();
+        return nums;
     }
 }
